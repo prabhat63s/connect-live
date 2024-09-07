@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 const corsOption = {
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000", "https://connect-live.onrender.com"],
   credentials: true,
 };
 app.use(cors(corsOption));
